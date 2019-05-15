@@ -1,0 +1,82 @@
+.contacts{
+    min-height: 300px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.contacts .title{
+    margin-bottom: 50px;
+}
+
+
+/*===========
+style content
+============*/
+.contacts .content{
+    text-align: left;
+}
+.contacts .content .address h5{
+    font-size: 22px;
+    line-height: 30px;
+    font-family: 'open sans';
+    margin-bottom: 35px;
+}
+.contacts .content .address p{
+    font-size: 13px;
+    font-family: monospace;
+    color: #6a737b;
+    line-height: 14px;
+}
+
+.contacts .content .form h3{
+    font-family: 'open sans';
+    font-weight: bold;
+}
+.contacts .content .form input{
+    width: 47%;
+    margin-right: 2%;
+    border: none;
+    border-bottom: 1px solid #aaa;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.contacts .content .form input:focus{
+    border-color: $mainColor;
+}
+.contacts .content .form textarea{
+    width: 97%;
+    border: none;
+    border-bottom: 1px solid #aaa;
+    padding: 10px;
+    font-size: 16px;
+}
+.contacts .content .form button{
+    float: right;
+    margin-right: 5%;
+    margin-top: 10px;
+    border: none;
+    background: none;
+    font-size: 18px;
+}
+
+.contacts .content .social{
+    text-align: center;
+    margin-top: 10px;
+}
+.contacts .content .social li{
+    display: inline-block;
+    margin: 10px;
+}
+.contacts .content .social li i{
+    color: #cdd2d6;
+}
+
+
+/*=============
+media query
+==============*/
+@media (max-width: 768px){
+    .contacts .head p{
+        font-size: 14px;
+    }
+}

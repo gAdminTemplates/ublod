@@ -1,0 +1,173 @@
+header{
+    position: relative;
+}
+nav{
+    display: none;
+}
+.navbar-default .navbar-toggle{
+    border: none;
+}
+.navbar-default .navbar-toggle .icon-bar{
+    color: #fff;
+    padding: 2px;
+    background-color: #fff;
+}
+.navbar-default .navbar-toggle:hover,.navbar-default .navbar-toggle:focus{
+    background: transparent;
+}
+.navbar-default{
+    background: rgba(16, 22, 54, 0.2);
+    border-bottom: 0px;
+    @include transition(all,.7s,linear);
+}
+.navbar-default .navbar-header .navbar-brand{
+    color: #fff;
+    font-size: 20px;
+}
+.navbar-collapse{
+    border: none;
+}
+.navbar-default .navbar-collapse .navbar-nav li{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    @include transition(all,.5s,linear);
+}
+.navbar-default .navbar-collapse .navbar-nav li:hover{
+    border-top: 2px solid #0eb493;
+}
+.navbar-default .navbar-collapse .navbar-nav li a{
+    color: #fff;
+}
+.navbar-default .navbar-nav > .active{
+    background: none;
+    border-top: 2px solid #0eb493;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    background: none;
+    color: #fff;
+}
+.carousel-indicators{
+    width: 0px;
+    margin: 0px;
+    top: 50%;
+    left: 98%;
+    float: right;
+}
+.carousel-indicators li,.carousel-indicators li.active{
+    width: 8px;
+    height: 8px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.carousel-inner .item:first-Child{
+    background: url(../images/banner1.jpg);
+    background-size: cover;
+    width: 100%;
+    min-height: 770px;
+    //min-height: 100vh;
+}
+.carousel-inner .item:last-Child{
+    background: url(../images/banner2.jpg);
+    background-size: cover;
+    width: 100%;
+    min-height: 770px;
+}
+.carousel-caption{
+    width: 100%;
+    background: linear-gradient(rgba(44,44,44 ,.6),rgba(44,44,44 ,1));
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    padding-top: 400px;
+}
+.carousel-caption h2{
+    font-family: inherit;
+    font-size: 62px;
+    font-weight: 300;
+    padding: 0px;
+    margin: 0px;
+}
+.carousel-caption h2 span{
+    font-weight: 800;
+}
+.carousel-caption h3 {
+    font-family: inherit;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 50px;
+    padding: 0px;
+    margin: 0px;
+}
+.carousel-caption h3 span{
+    color: $mainColor;
+}
+.carousel-caption p{
+    font-size: 20px;
+    font-family: cursive;
+}
+.carousel-caption p::before , .carousel-caption p::after{
+    color: $mainColor;
+    content: '___';
+    top: -8px;
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 25px;
+}
+
+.carousel-caption .social{
+    margin-top: 30px;
+}
+.carousel-caption .social li{
+    display: inline-block;
+    margin: 5px;
+    
+}
+.carousel-caption .social li i{
+    color: #555;
+    @include transition(all,.5s,linear)
+}
+.carousel-caption .social li i:hover{
+    color: #fff;
+}
+
+
+
+
+
+/*==============
+media query
+===============*/
+@media (max-width: 991px){
+    .carousel-caption h2{
+        font-size: 55px;
+    }
+    .carousel-caption h3{
+        font-size: 36px;
+    }
+    .carousel-caption p{
+        font-size: 18px;
+    }
+}
+@media (max-width: 768px){
+    .carousel-indicators{
+        left: 90%;
+    }
+    .carousel-caption h2{
+        font-size: 35px;
+    }
+    .carousel-caption h3{
+        font-size: 22px;
+    }
+    .carousel-caption p{
+        font-size: 14px;
+    }
+    .carousel-caption .social{
+        margin-top: 50px;
+    }
+}

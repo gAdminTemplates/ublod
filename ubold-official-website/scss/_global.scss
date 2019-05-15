@@ -1,0 +1,65 @@
+/*=============================*/
+    //some global style
+/*=============================*/
+body{
+    font-family: 'open sans' , sans-serif;
+    overflow: hidden;
+}
+*:focus{
+    outline: none;
+    
+}
+
+.title h2{
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-family: 'open sans';
+    font-size: 28px;
+    color: $mainColor;
+}
+.title div{
+    color: #ccc;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.title div::before,.title div::after{
+    content: '________________';
+    position: relative;
+    top: -10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.head p{
+    color: #5b646e;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: monospace;
+    margin-bottom: 50px;
+}
+
+
+/*=============================*/
+    //google map
+/*=============================*/
+#map 
+{
+    height: 200px;
+}
+
+/*=============================*/
+    //scroll top icon
+/*=============================*/
+.scroll_up{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #a3ccff;
+    display: none;
+}
+.scroll_up i{
+    margin-top: -10px;
+    color: #a3ccff;
+}

@@ -1,0 +1,87 @@
+.features{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    min-height: 300px;
+    background: #f4f7f9;
+}
+
+.features .features-content{
+    margin-top: 50px;
+}
+.features .content i{
+    width: 50px;
+    padding: 10px 13px;
+    border: 1px solid $mainColor;
+    border-radius: 50%;
+    color: $mainColor;
+}
+.features .content .data{
+    text-align: left;
+}
+.features .content .data h3{
+    margin: 0px;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'open sans';
+}
+.features .content .data p{
+    margin-top: 20px;
+    font-family: cursive;
+    color: #777;
+    font-size: 13px;
+}
+
+/*========
+animation 
+=========*/
+@keyframes fadeInRight{
+    0%{
+        opacity: 0;
+        transform: translateX(20px);
+    }
+}
+@keyframes fadeInLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+}
+@keyframes fadeInUp{
+    0%{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+@keyframes fadeInDown{
+    0%{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+/*==============
+media query
+===============*/
+@media (max-width: 991px){
+    
+    .features .content{
+    }
+    .features .content div:first-Child{
+        margin-bottom: 20px;
+    }
+    .features .content .data{
+        text-align: center;
+    }
+}
+@media (max-width: 480px){
+    .features .content{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .features .content div:first-Child{
+        margin-bottom: 20px;
+    }
+    .features .content .data{
+        text-align: center;
+    }
+}

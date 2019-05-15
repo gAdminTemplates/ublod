@@ -1,0 +1,17 @@
+/*=================
+Start loader style
+===================*/
+.preloader{
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    overflow: hidden;
+    background: #fff;
+}
+.preloader img{
+    margin-top: 400px;
+}
+/*=================
+End loader style
+===================*/
